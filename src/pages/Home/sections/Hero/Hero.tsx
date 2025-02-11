@@ -45,12 +45,12 @@ const Hero = () => {
               </Grid>
 
             <Grid item xs={12} md={7}>
-              <Typography color="primary.contrastText" variant="h1" textAlign="center" pb={2}>Leonardo Meneguelli</Typography>
-              <Typography color="primary.contrastText" variant="h2" textAlign="center">I'm a software Engineer</Typography>
-              <Grid container display="flex" justifyContent="center" spacing={3} pb={3}>
+              <Typography color="secondary.contrastText" variant="h2" textAlign="center" pb={2}>Leonardo Meneguelli</Typography>
+              <Typography color="secondary.main" variant="h2" textAlign="center">I'm a Front-End Developer</Typography>
+              <Grid container display="flex" justifyContent="center" spacing={3} pt={4}>
                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                  <StyledButton>
-                    <DownloadIcon />
+                  <StyledButton onClick={()=> console.log("download")}>
+                    <DownloadIcon color="secondary"/>
                     <Typography>
                       Download CV
                     </Typography>
@@ -58,17 +58,15 @@ const Hero = () => {
                 </Grid>
 
                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                  <StyledButton>
-                    <EmailIcon />
-                    <Typography>
+                  <StyledButton onClick={()=> console.log("contact")}>
+                    <EmailIcon color="secondary" />
+                    <Typography >
                       Contact me
 
                     </Typography>
                   </StyledButton>
                 </Grid>
               </Grid>
-
-
             </Grid>
           </Grid>
         </Container>
