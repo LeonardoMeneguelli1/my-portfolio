@@ -2,7 +2,6 @@ import { Box, Container, Grid, styled, Typography } from "@mui/material";
 import Avatar from "../../../../assets/images/perfil.jpg";
 import DownloadIcon from '@mui/icons-material/Download';
 import EmailIcon from '@mui/icons-material/Email';
-import theme from "../../../../theme";
 import StyledButton from "../../../../assets/images/StyledButton";
 import { AnimatedBackground } from "../../../../components/AnimatedBackground/AnimatedBackground";
 
@@ -12,6 +11,13 @@ const Hero = () => {
     height: "100vh",
     display: "flex",
     alignItems: "center",
+    [theme.breakpoints.up('xs')]:{ // <= mobile
+      PaddingTop: "100px",
+    },
+    [theme.breakpoints.up('md')]:{ // <= desktop
+      PaddingTop: "0px",
+    },
+
   }));
 
   const StyledImg = styled("img")(({theme}) => ({
