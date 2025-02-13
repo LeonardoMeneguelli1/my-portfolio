@@ -1,11 +1,11 @@
 import React from 'react';
-import { Box, Container, Divider, Grid, styled, Typography } from "@mui/material";
+import { Box, Container, Divider, Grid, styled, Typography, useMediaQuery } from "@mui/material";
 import WorkIcon from "@mui/icons-material/Work";
 import SchoolIcon from "@mui/icons-material/School";
 import { motion } from 'framer-motion';
 
 const About = () => {
-    const StyledHero = styled("div")(({ theme }) => ({
+    const StyledAbout = styled("div")(({ theme }) => ({
         backgroundColor: "white",
         minHeight: "70vh",
         display: "flex",
@@ -15,7 +15,7 @@ const About = () => {
         paddingBottom: "50px",
         
         [theme.breakpoints.up("xs")]: {// <= mobile
-            paddingTop: "100px",
+            paddingTop: "0px",
         },
         [theme.breakpoints.up("md")]: {// <= desktop
             paddingTop: "0px",
@@ -45,10 +45,12 @@ const About = () => {
         },
     }));
 
+    const isMobile = useMediaQuery((theme) => theme.breakpoints.down("md"));
+
     const leftCardVariants = {
         offscreen: {
-            x: -400, 
-            opacity: 1, 
+            x: isMobile ? 200 : -400, 
+            opacity: 0, 
         },
         onscreen: {
             x: 0, 
@@ -62,7 +64,7 @@ const About = () => {
     const rightCardVariants = {
         offscreen: {
             x: 400, 
-            opacity: 1, 
+            opacity: 0, 
         },
         onscreen: {
             x: 0, 
@@ -74,7 +76,7 @@ const About = () => {
     };
 
     return (
-        <StyledHero>
+        <StyledAbout id="about">
             <Container maxWidth="lg">
                 <Typography pt={10} color="primary" variant="h2" textAlign="center" mb={4}>
                     About me
@@ -112,14 +114,16 @@ const About = () => {
                         </motion.div>
                     </Grid>
                 </Grid>
-                <Typography variant="body1" textAlign="center" mt={4}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porta semper velit vel rutrum.
-                    Aliquam vulputate, nisi eget tristique mattis, nisi sem faucibus eros, a auctor felis sem ut mauris.
+                <Typography variant="body1" textAlign="center" mt={4} sx={{ wordBreak: "break-word", overflowWrap: "break-word" }}>
+                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
                 </Typography>
 
                 <Divider sx={{ my: 3, borderColor: "#e0e0e0", borderBottomWidth: 3 }} />
 
-                <Box sx={{ mt: 4, textAlign: "center" }}>
+                <Box id="skills" sx={{ mt: 4, textAlign: "center" }}>
                     <Typography variant="h2" color="primary.main">Skills</Typography>
                     <Grid container spacing={2} justifyContent="center" sx={{ mt: 3 }}>
                         {[
@@ -148,7 +152,7 @@ const About = () => {
                     </Grid>
                 </Box>
             </Container>
-        </StyledHero>
+        </StyledAbout>
     );
 };
 
