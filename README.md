@@ -23,7 +23,7 @@
 
 ### 🎨 Layout
 
-[My Portfolio]([https://github.com/LeonardoMeneguelli1/my-portfolio/issues/3#issue-2869396974](https://private-user-images.githubusercontent.com/88052231/415725943-95d14c01-7180-4093-9668-5f7b88e32a3c.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAxNTM5MTgsIm5iZiI6MTc0MDE1MzYxOCwicGF0aCI6Ii84ODA1MjIzMS80MTU3MjU5NDMtOTVkMTRjMDEtNzE4MC00MDkzLTk2NjgtNWY3Yjg4ZTMyYTNjLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjIxVDE2MDAxOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE3NTM1Y2VkYThmMGIwYzA1ZTgzNjQ2YzNmNWVlN2Q5M2IwODQ4ZWU3ZmY3Njk3MzM2YzQxNTA2NDg3MmFlYzImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.vtYo6J0ztWZouGCAE0UteRglT8HebcMVLt_Xat7axRw))
+<img src="https://github.com/user-attachments/assets/93670064-5db1-4e3d-9d1b-2509276201e6" width="526" height="296" />
 
 ### 🔧 Como rodar o projeto
 
