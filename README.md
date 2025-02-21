@@ -23,7 +23,7 @@
 
 ### 🎨 Layout
 
-![excursion (1)]([https://github.com/LeonardoMeneguelli1/front-end-developer-test/assets/88052231/fe5fe616-81f6-4b78-b94d-d60ee10f5540](https://github.com/LeonardoMeneguelli1/my-portfolio/issues/3#issue-2869396974))
+![excursion (1)]([https://github.com/LeonardoMeneguelli1/my-portfolio/issues/3#issue-2869396974])
 
 ### 🔧 Como rodar o projeto
 
