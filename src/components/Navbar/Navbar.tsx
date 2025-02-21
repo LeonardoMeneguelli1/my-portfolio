@@ -15,7 +15,7 @@ const Navbar = () => {
     },
   }));
 
-  const handleSmoothScroll = (targetId) => {
+  const handleSmoothScroll = (targetId: string) => {
     setTimeout(() => {
       document.querySelector(targetId)?.scrollIntoView({ behavior: "smooth" });
     },);
