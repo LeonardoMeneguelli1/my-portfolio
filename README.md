@@ -23,7 +23,7 @@
 
 ### 🎨 Layout
 
-![excursion (1)]([https://github.com/LeonardoMeneguelli1/my-portfolio/issues/3#issue-2869396974])
+[My Portfolio](https://github.com/LeonardoMeneguelli1/my-portfolio/issues/3#issue-2869396974)
 
 ### 🔧 Como rodar o projeto
 
