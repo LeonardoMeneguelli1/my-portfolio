@@ -135,9 +135,8 @@ const Projects = () => {
                                     <Typography variant="h6" fontWeight="bold">My Portfolio</Typography>
                                     <Typography color="gray" mb={1}>fev 2025 - fev 2025</Typography>
                                     <StyledImg src={Project2} />
-                                    <Typography sx={{ wordBreak: "break-word", overflowWrap: "break-word" }}>
-                                        This is a frontend project for a travel and tourism website. It was developed using HTML, CSS, JavaScript, with the implementation of responsive design, coding standards, React-Bootstrap, React, SEO, and animations. The goal was to create a simple and functional interface to present information related to tourist destinations.
-                                    </Typography>
+                                    <Typography sx={{wordBreak: "break-word", overflowWrap: "break-word" }}>
+                                        This is a frontend project for a personal portfolio website. The project was built using TypeScript, HTML, CSS, React, and MUI, with a focus on responsive design, smooth animations, and modern user interface principles. The goal was to showcase my skills, projects, and achievements as a web developer.                                    </Typography>
                                 </ContentWrapper>
                                 <Typography fontWeight="bold" mt={2}>
                                     Technologies: TypeScript, HTML, CSS, React, MUI
