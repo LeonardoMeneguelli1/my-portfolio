@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { Box, Container, Grid, Link, styled, Typography } from "@mui/material";
 import Avatar from "../../../../assets/images/perfil.jpg";
 import DownloadIcon from '@mui/icons-material/Download';
@@ -72,16 +72,16 @@ const Hero = () => {
               </Typography>
               <Grid container display="flex" justifyContent="center" spacing={3} pt={4}>
                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                  <Link href="/public/Pdf/Leonardo_Curriculo.pdf" download="Leonardo_Curriculo.pdf" style={{ display:"contents", textDecoration: "none" }}>
-                    <StyledButton onClick={() => console.log("download")}>
+                  <Link href="/Pdf/Leonardo_Curriculo.pdf" download="Leonardo_Curriculo.pdf" style={{ display:"contents", textDecoration: "none" }}>
+                    <StyledButton>
                       <DownloadIcon color="secondary" />
                       <Typography>Download CV</Typography>
                     </StyledButton>
                   </Link>
                 </Grid>
                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                  <Link href="mailto:leonardomeneguelli@gmail.com" style={{ display:"contents", textDecoration: "none" }} >
-                    <StyledButton onClick={() => console.log("contact")}>
+                  <Link href="mailto:leonardomeneguelli1@gmail.com" style={{ display:"contents", textDecoration: "none" }} >
+                    <StyledButton>
                       <EmailIcon color="secondary" />
                       <Typography>Contact me</Typography>
                     </StyledButton>

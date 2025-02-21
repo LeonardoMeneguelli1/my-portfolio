@@ -1,4 +1,4 @@
-import { Box, Link, styled, Typography, useTheme } from "@mui/material";
+import { Box, Link, styled, Typography } from "@mui/material";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
@@ -34,7 +34,7 @@ const Baseboard = () => {
                         </Link>
                     </Box>
                     <Box>
-                        <Link href="mailto:leonardomeneguelli@gmail.com" style={{ textDecoration: "none" }}>
+                        <Link href="mailto:leonardomeneguelli1@gmail.com" style={{ textDecoration: "none" }}>
                             <EmailIcon sx={{ color: "primary.light", fontSize: { xs: "exlarge", sm: "exlarge" } }} />
                         </Link>
                     </Box>

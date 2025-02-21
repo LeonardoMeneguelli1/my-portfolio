@@ -1,4 +1,3 @@
-import React from 'react';
 import { Box, Container, Divider, Grid, styled, Typography, useMediaQuery } from "@mui/material";
 import WorkIcon from "@mui/icons-material/Work";
 import SchoolIcon from "@mui/icons-material/School";
@@ -13,7 +12,7 @@ const About = () => {
         flexDirection: "column",
         paddingTop: "50px",
         paddingBottom: "50px",
-        
+
         [theme.breakpoints.up("xs")]: {// <= mobile
             paddingTop: "0px",
         },
@@ -33,10 +32,10 @@ const About = () => {
         maxWidth: "300px",
         boxShadow: "0px 4px 10px rgba(0,0,0,0.1)",
         transition: "0.3s",
-        '&:hover':{
+        '&:hover': {
             backgroundColor: theme.palette.secondary.light
         },
-        
+
         [theme.breakpoints.down("md")]: {// <= mobile
             marginBottom: "20px",
         },
@@ -49,12 +48,12 @@ const About = () => {
 
     const leftCardVariants = {
         offscreen: {
-            x: isMobile ? 200 : -400, 
-            opacity: 0, 
+            x: isMobile ? 200 : -400,
+            opacity: 0,
         },
         onscreen: {
-            x: 0, 
-            opacity: 1, 
+            x: 0,
+            opacity: 1,
             transition: {
                 duration: 1,
             },
@@ -63,12 +62,12 @@ const About = () => {
 
     const rightCardVariants = {
         offscreen: {
-            x: 400, 
-            opacity: 0, 
+            x: 400,
+            opacity: 0,
         },
         onscreen: {
-            x: 0, 
-            opacity: 1, 
+            x: 0,
+            opacity: 1,
             transition: {
                 duration: 1,
             },
@@ -86,7 +85,7 @@ const About = () => {
                         <motion.div
                             initial="offscreen"
                             whileInView="onscreen"
-                            viewport={{ once: true, amount: 0.8 }} 
+                            viewport={{ once: true, amount: 0.8 }}
                             variants={leftCardVariants}
                         >
                             <Card>
@@ -114,12 +113,8 @@ const About = () => {
                         </motion.div>
                     </Grid>
                 </Grid>
-                <Typography variant="body1" textAlign="center" mt={4} sx={{ wordBreak: "break-word", overflowWrap: "break-word" }}>
-                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                </Typography>
+                <Typography variant="body1" mt={4} sx={{ wordBreak: "break-word", overflowWrap: "break-word" }}>
+                    I am a Front-End Developer passionate about creating intuitive and responsive interfaces. I have one year of experience as a Full Stack Developer, which has given me a broad understanding of web development. I am always looking to improve my skills and stay up to date with new technologies. Additionally, I value strong teamwork, believing that collaboration is essential for building innovative and efficient solutions.                </Typography>
 
                 <Divider sx={{ my: 3, borderColor: "#e0e0e0", borderBottomWidth: 3 }} />
 
@@ -127,7 +122,7 @@ const About = () => {
                     <Typography variant="h2" color="primary.main">Skills</Typography>
                     <Grid container spacing={2} justifyContent="center" sx={{ mt: 3 }}>
                         {[
-                            "Javascript", "Typescript", "React", "Next", "Git","Laravel","PHP", "HTML",
+                            "Javascript", "Typescript", "React", "Next", "Git", "Laravel", "PHP", "HTML",
                             "CSS", "AWS", "Material UI", "Figma"
                         ].map((skills, index) => (
                             <Grid item xs={6} sm={4} md={2} key={index}>

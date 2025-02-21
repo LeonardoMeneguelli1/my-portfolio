@@ -1,7 +1,8 @@
-import { Box, Button, Container, Grid, styled, Typography, useMediaQuery } from "@mui/material";
+import { Box, Container, Grid, styled, Typography, useMediaQuery } from "@mui/material";
 import { motion } from "framer-motion";
 import StyledButton from "../../../../assets/images/StyledButton";
-import Project from "../../../../assets/images/project1.gif";
+import Project1 from "../../../../assets/images/project1.gif";
+import Project2 from "../../../../assets/images/myPortfolio.gif";
 import { Link } from "@mui/material";
 
 const Projects = () => {
@@ -17,7 +18,7 @@ const Projects = () => {
         textAlign: "left",
         width: "100%",
         maxWidth: "none",
-        minHeight: "auto",
+        minHeight: "500px",
         backgroundColor: "transparent",
         color: "#fff",
         display: "flex",
@@ -94,26 +95,25 @@ const Projects = () => {
                         >
                             <Card>
                                 <ContentWrapper>
-                                    <Typography variant="h6" fontWeight="bold">Project 1</Typography>
+                                    <Typography variant="h6" fontWeight="bold">Excursion Website</Typography>
                                     <Typography color="gray" mb={1}>Out 2023 - Ago 2023</Typography>
-                                    <StyledImg src={Project} alt="Profile" />
+                                    <StyledImg src={Project1} alt="Profile" />
                                     <Typography sx={{ wordBreak: "break-word", overflowWrap: "break-word" }}>
-                                        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.
-                                    </Typography>
+                                        This is a frontend project for a travel and tourism website. It was developed using HTML, CSS, JavaScript, with the implementation of responsive design, coding standards, React-Bootstrap, React, SEO, and animations. The goal was to create a simple and functional interface to present information related to tourist destinations.                                    </Typography>
                                 </ContentWrapper>
                                 <Typography fontWeight="bold" mt={2}>
-                                    Technologies: JavaScript, HTML, CSS
+                                    Technologies: JavaScript, HTML, CSS, React, React-Bootstrap
                                 </Typography>
 
                                 <Grid container spacing={2} pt={4}>
-                                    <Grid item xs={6} md={6} display="flex" justifyContent="center">
-                                        <StyledButton onClick={() => console.log("view project")}>
-                                            <Typography>View Project</Typography>
-                                        </StyledButton>
-                                    </Grid>
-                                    <Grid item xs={6} md={6} display="flex" justifyContent="center">
+                                    {/* <Grid item xs={6} md={6} display="flex" justifyContent="center">
+                                            <StyledButton>
+                                                <Typography>View Project</Typography>
+                                            </StyledButton>
+                                    </Grid> */}
+                                    <Grid item xs={12} md={12} display="flex" justifyContent="center">
                                         <Link href="https://github.com/LeonardoMeneguelli1/front-end-developer-test" style={{ display: "contents", textDecoration: "none" }}>
-                                            <StyledButton onClick={() => console.log("view code")}>
+                                            <StyledButton>
                                                 <Typography>View Code</Typography>
                                             </StyledButton>
                                         </Link>
@@ -132,26 +132,26 @@ const Projects = () => {
                         >
                             <Card>
                                 <ContentWrapper>
-                                    <Typography variant="h6" fontWeight="bold">Project 2</Typography>
-                                    <Typography color="gray" mb={1}>Out 2023 - Ago 2023</Typography>
-                                    <StyledImg src={Project} alt="Profile" />
+                                    <Typography variant="h6" fontWeight="bold">My Portfolio</Typography>
+                                    <Typography color="gray" mb={1}>fev 2025 - fev 2025</Typography>
+                                    <StyledImg src={Project2} />
                                     <Typography sx={{ wordBreak: "break-word", overflowWrap: "break-word" }}>
-                                        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.
+                                        This is a frontend project for a travel and tourism website. It was developed using HTML, CSS, JavaScript, with the implementation of responsive design, coding standards, React-Bootstrap, React, SEO, and animations. The goal was to create a simple and functional interface to present information related to tourist destinations.
                                     </Typography>
                                 </ContentWrapper>
                                 <Typography fontWeight="bold" mt={2}>
-                                    Technologies: JavaScript, HTML, CSS
+                                    Technologies: TypeScript, HTML, CSS, React, MUI
                                 </Typography>
 
                                 <Grid container spacing={2} pt={4}>
-                                    <Grid item xs={6} md={6} display="flex" justifyContent="center">
-                                        <StyledButton onClick={() => console.log("view project")}>
+                                    {/* <Grid item xs={6} md={6} display="flex" justifyContent="center">
+                                        <StyledButton>
                                             <Typography>View Project</Typography>
                                         </StyledButton>
-                                    </Grid>
-                                    <Grid item xs={6} md={6} display="flex" justifyContent="center">
-                                        <Link href="https://github.com/LeonardoMeneguelli1/front-end-developer-test" style={{ display: "contents", textDecoration: "none" }}>
-                                            <StyledButton onClick={() => console.log("view code")}>
+                                    </Grid> */}
+                                    <Grid item xs={12} md={12} display="flex" justifyContent="center">
+                                        <Link href="https://github.com/LeonardoMeneguelli1/my-portfolio" style={{ display: "contents", textDecoration: "none" }}>
+                                            <StyledButton>
                                                 <Typography>View Code</Typography>
                                             </StyledButton>
                                         </Link>
