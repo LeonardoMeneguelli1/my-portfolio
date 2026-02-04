@@ -1,9 +1,8 @@
-import { Box, Container, Grid, styled, Typography, useMediaQuery } from "@mui/material";
+import { Box, Container, Grid, styled, Typography, useMediaQuery, Link } from "@mui/material";
 import { motion } from "framer-motion";
 import StyledButton from "../../../../assets/images/StyledButton";
 import Project1 from "../../../../assets/images/project1.gif";
 import Project2 from "../../../../assets/images/myPortfolio.gif";
-import { Link } from "@mui/material";
 
 const Projects = () => {
     const StyledProjects = styled("div")(({ theme }) => ({
@@ -35,8 +34,6 @@ const Projects = () => {
 
     const ContentWrapper = styled(Box)({
         flexGrow: 1,
-        overflow: "hidden",
-        textOverflow: "ellipsis",
     });
 
     const StyledImg = styled("img")(({ theme }) => ({
@@ -44,8 +41,10 @@ const Projects = () => {
         height: "auto",
         borderRadius: "10px",
         marginBottom: "15px",
+        display: "block",
         [theme.breakpoints.down("md")]: {
             maxHeight: "300px",
+            objectFit: "cover",
         },
     }));
 
@@ -85,34 +84,48 @@ const Projects = () => {
                 <Typography color="white" variant="h2" textAlign="center" mb={4}>
                     Projects
                 </Typography>
+
                 <Grid container justifyContent="center" spacing={3}>
+                    {/* CARD 1 */}
                     <Grid item xs={12} md={6} display="flex" justifyContent="center">
                         <motion.div
                             initial="offscreen"
                             whileInView="onscreen"
-                            viewport={{ once: true, amount: 0.8 }}
+                            viewport={{ once: true, amount: 0.3 }}
                             variants={leftCardVariants}
+                            style={{ width: "100%" }}
                         >
                             <Card>
                                 <ContentWrapper>
-                                    <Typography variant="h6" fontWeight="bold">Excursion Website</Typography>
-                                    <Typography color="gray" mb={1}>Out 2023 - Ago 2023</Typography>
-                                    <StyledImg src={Project1} alt="Profile" />
+                                    <Typography variant="h6" fontWeight="bold">
+                                        Excursion Website
+                                    </Typography>
+
+                                    <Typography color="gray" mb={1}>
+                                        Out 2023 - Ago 2023
+                                    </Typography>
+
+                                    <StyledImg src={Project1} alt="Excursion Website Project" />
+
                                     <Typography sx={{ wordBreak: "break-word", overflowWrap: "break-word" }}>
-                                        This is a frontend project for a travel and tourism website. It was developed using HTML, CSS, JavaScript, with the implementation of responsive design, coding standards, React-Bootstrap, React, SEO, and animations. The goal was to create a simple and functional interface to present information related to tourist destinations.                                    </Typography>
+                                        This is a frontend project for a travel and tourism website. It was developed
+                                        using HTML, CSS, JavaScript, with the implementation of responsive design,
+                                        coding standards, React-Bootstrap, React, SEO, and animations. The goal was
+                                        to create a simple and functional interface to present information related
+                                        to tourist destinations.
+                                    </Typography>
                                 </ContentWrapper>
+
                                 <Typography fontWeight="bold" mt={2}>
                                     Technologies: JavaScript, HTML, CSS, React, React-Bootstrap
                                 </Typography>
 
                                 <Grid container spacing={2} pt={4}>
-                                    {/* <Grid item xs={6} md={6} display="flex" justifyContent="center">
-                                            <StyledButton>
-                                                <Typography>View Project</Typography>
-                                            </StyledButton>
-                                    </Grid> */}
-                                    <Grid item xs={12} md={12} display="flex" justifyContent="center">
-                                        <Link href="https://github.com/LeonardoMeneguelli1/front-end-developer-test" style={{ display: "contents", textDecoration: "none" }}>
+                                    <Grid item xs={12} display="flex" justifyContent="center">
+                                        <Link
+                                            href="https://github.com/LeonardoMeneguelli1/front-end-developer-test"
+                                            style={{ display: "contents", textDecoration: "none" }}
+                                        >
                                             <StyledButton>
                                                 <Typography>View Code</Typography>
                                             </StyledButton>
@@ -123,33 +136,45 @@ const Projects = () => {
                         </motion.div>
                     </Grid>
 
+                    {/* CARD 2 */}
                     <Grid item xs={12} md={6} display="flex" justifyContent="center">
                         <motion.div
                             initial="offscreen"
                             whileInView="onscreen"
-                            viewport={{ once: true, amount: 0.8 }}
+                            viewport={{ once: true, amount: 0.3 }}
                             variants={rightCardVariants}
+                            style={{ width: "100%" }}
                         >
                             <Card>
                                 <ContentWrapper>
-                                    <Typography variant="h6" fontWeight="bold">My Portfolio</Typography>
-                                    <Typography color="gray" mb={1}>fev 2025 - fev 2025</Typography>
-                                    <StyledImg src={Project2} />
-                                    <Typography sx={{wordBreak: "break-word", overflowWrap: "break-word" }}>
-                                        This is a frontend project for a personal portfolio website. The project was built using TypeScript, HTML, CSS, React, and MUI, with a focus on responsive design, smooth animations, and modern user interface principles. The goal was to showcase my skills, projects, and achievements as a web developer.                                    </Typography>
+                                    <Typography variant="h6" fontWeight="bold">
+                                        My Portfolio
+                                    </Typography>
+
+                                    <Typography color="gray" mb={1}>
+                                        fev 2025 - fev 2025
+                                    </Typography>
+
+                                    <StyledImg src={Project2} alt="My Portfolio Project" />
+
+                                    <Typography sx={{ wordBreak: "break-word", overflowWrap: "break-word" }}>
+                                        This is a frontend project for a personal portfolio website. The project was
+                                        built using TypeScript, HTML, CSS, React, and MUI, with a focus on responsive
+                                        design, smooth animations, and modern user interface principles. The goal
+                                        was to showcase my skills, projects, and achievements as a web developer.
+                                    </Typography>
                                 </ContentWrapper>
+
                                 <Typography fontWeight="bold" mt={2}>
                                     Technologies: TypeScript, HTML, CSS, React, MUI
                                 </Typography>
 
                                 <Grid container spacing={2} pt={4}>
-                                    {/* <Grid item xs={6} md={6} display="flex" justifyContent="center">
-                                        <StyledButton>
-                                            <Typography>View Project</Typography>
-                                        </StyledButton>
-                                    </Grid> */}
-                                    <Grid item xs={12} md={12} display="flex" justifyContent="center">
-                                        <Link href="https://github.com/LeonardoMeneguelli1/my-portfolio" style={{ display: "contents", textDecoration: "none" }}>
+                                    <Grid item xs={12} display="flex" justifyContent="center">
+                                        <Link
+                                            href="https://github.com/LeonardoMeneguelli1/my-portfolio"
+                                            style={{ display: "contents", textDecoration: "none" }}
+                                        >
                                             <StyledButton>
                                                 <Typography>View Code</Typography>
                                             </StyledButton>
